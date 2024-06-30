@@ -12,4 +12,9 @@ const fromDollarToYen = function (valorDollar){
     return dollarYen
 }
 
-module.exports = {sum, fromEuroToDollar, fromDollarToYen}
+const fromYenToPound = function (valorYen){
+    let YenToEuro = 1/156.5
+    let YenPound = YenToEuro * 0.87
+    return YenPound
+}
+module.exports = {sum, fromEuroToDollar, fromDollarToYen, fromYenToPound}
